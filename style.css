@@ -144,11 +144,6 @@ body {
     display: flex;
   }
 }
-@media (max-width: 440px) {
-  .header .container .hamburger-menu {
-    margin-right: -40%;
-  }
-}
 .header .container .hamburger-menu .bar {
   width: 30px;
   height: 5px;
