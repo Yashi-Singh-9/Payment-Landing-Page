@@ -15,6 +15,7 @@ body{
     font-weight: 500;
     background-color: @neutral-gray;
     color: @white;
+    overflow-x: hidden;
 }
 
 .header{
@@ -156,7 +157,7 @@ body{
 
     @media (max-width: 768px) {
         flex-direction: column;
-        margin: 5rem auto;
+        margin: 5rem 0;
     }
 
     .content{
@@ -175,6 +176,11 @@ body{
             font-size: 55px;
             font-weight: 600;
             margin-bottom: 2rem;
+
+            @media (max-width: 480px) {
+                font-size: 40px;
+                width: 75%;
+            }
         }
 
         .btn-download,
@@ -214,10 +220,8 @@ body{
 
             @media (max-width: 768px) {
                 margin-top: 70px;
-            }
-
-            @media (max-width: 480px){
-                margin-left: 50%;
+                width: 100%;
+                height: auto;
             }
         }
     }

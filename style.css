@@ -29,6 +29,7 @@ body {
   font-weight: 500;
   background-color: #1E1E1E;
   color: #fff;
+  overflow-x: hidden;
 }
 .header {
   padding: 2rem 2rem;
@@ -164,7 +165,7 @@ body {
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
-    margin: 5rem auto;
+    margin: 5rem 0;
   }
 }
 .main .content {
@@ -182,6 +183,12 @@ body {
   font-size: 55px;
   font-weight: 600;
   margin-bottom: 2rem;
+}
+@media (max-width: 480px) {
+  .main .content h1 {
+    font-size: 40px;
+    width: 75%;
+  }
 }
 .main .content .btn-download,
 .main .content .btn-download:visited {
@@ -219,10 +226,7 @@ body {
 @media (max-width: 768px) {
   .main .card-display img {
     margin-top: 70px;
-  }
-}
-@media (max-width: 480px) {
-  .main .card-display img {
-    margin-left: 50%;
+    width: 100%;
+    height: auto;
   }
 }
